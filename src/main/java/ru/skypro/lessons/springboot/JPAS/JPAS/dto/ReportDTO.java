@@ -5,15 +5,15 @@ package ru.skypro.lessons.springboot.JPAS.JPAS.dto;
 
 public class ReportDTO {
     private String deportamentName;
-    private Integer count_employee;
+    private Long count_employee;
     private Integer max_salary;
     private Integer min_salary;
-    private Integer avg_salary;
+    private Double avg_salary;
 
     public ReportDTO() {
     }
 
-    public ReportDTO( String deportament_name, Integer count_employee, Integer max_salary, Integer min_salary, Integer avg_salary) {
+    public ReportDTO( String deportament_name, Long count_employee, Integer max_salary, Integer min_salary, Double avg_salary) {
         this.deportamentName = deportament_name;
         this.count_employee = count_employee;
         this.max_salary = max_salary;
@@ -30,11 +30,11 @@ public class ReportDTO {
         this.deportamentName = deportamentName;
     }
 
-    public Integer getCount_employee() {
+    public Long getCount_employee() {
         return count_employee;
     }
 
-    public void setCount_employee(Integer count_employee) {
+    public void setCount_employee(Long count_employee) {
         this.count_employee = count_employee;
     }
 
@@ -54,11 +54,11 @@ public class ReportDTO {
         this.min_salary = min_salary;
     }
 
-    public Integer getAvg_salary() {
+    public Double getAvg_salary() {
         return avg_salary;
     }
 
-    public void setAvg_salary(Integer avg_salary) {
+    public void setAvg_salary(Double avg_salary) {
         this.avg_salary = avg_salary;
     }
 

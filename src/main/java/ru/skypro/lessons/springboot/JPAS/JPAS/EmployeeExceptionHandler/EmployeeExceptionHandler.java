@@ -22,8 +22,4 @@ public class EmployeeExceptionHandler {
         return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
-    @ExceptionHandler
-    public ResponseEntity<?> handleException(Exception exception) {
-        return new ResponseEntity<>(HttpStatus.FORBIDDEN);
-    }
 }
