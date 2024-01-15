@@ -14,5 +14,5 @@ public interface ReportRepository extends JpaRepository<Report, Integer> {
     List<Report> findAllReport();
 
     @Query("SELECT r.data FROM Report r  WHERE r.id = :id")
-    byte [] findGetReport(@PathVariable Long id);
+    byte [] findGetReport(@Param("id") Long id);
 }
